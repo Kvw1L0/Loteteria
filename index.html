@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lotería Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Lotería Express</h1>
+  <p>Toca los números que se anuncien. ¡Marca tu cartón!</p>
+  <div id="card" class="card"></div>
+  <p><strong>ID de cartón:</strong> <span id="cardId"></span></p>
+  <button onclick="checkWin()">¡Gané!</button>
+  <div id="captura" class="captura-box"></div>
+  <div class="acciones">
+    <a id="guardar" style="display:none" class="boton" target="_blank">📥 Guardar imagen</a>
+    <a id="whatsapp" style="display:none" class="boton" target="_blank">📲 Abrir WhatsApp</a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
