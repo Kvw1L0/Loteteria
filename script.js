@@ -78,7 +78,6 @@ function celebrar() {
 document.getElementById("trompeta").play();
 document.body.classList.add("flash");
 setTimeout(() => document.body.classList.remove("flash"), 3000);
-  document.getElementById("titulo-principal").textContent = "FELICITACIONES";
   document.getElementById("felicitaciones").style.display = "block";
 }
 
