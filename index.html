@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lotería Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="titulo-principal">Lotería Express</h1>
+  <canvas id="confetti-canvas"></canvas>
+  <div id="capturable" class="capturable-box">
+    <div id="card" class="card"></div>
+    <p class="carton-id">ID del cartón: <strong id="cardIdVisual"></strong></p>
+  </div>
+  <div id="captura" class="captura-box"></div>
+  <div class="acciones">
+    <a id="guardar" style="display:none" class="boton" target="_blank">1️⃣ Guardar imagen</a>
+    <a id="whatsapp" style="display:none" class="boton" target="_blank">2️⃣ Enviar por WhatsApp</a>
+  </div>
+  <p id="felicitaciones" class="felicitaciones" style="display: none;">🎉 ¡FELICITACIONES! 🎉</p>
+
+  <audio id="aplausos" src="aplausos.mp3" preload="auto"></audio>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
