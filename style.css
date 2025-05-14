@@ -1,0 +1,61 @@
+
+body {
+  font-family: sans-serif;
+  background-color: #111;
+  background-image: url('fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.logo {
+  height: 150px;
+}
+h1 {
+  color: #ffc107;
+  margin: 0;
+}
+#carton {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.celda {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  color: #111;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.celda.marcada {
+  background-color: #FFC90E;
+  transform: scale(1.1);
+}
+.boton {
+  padding: 12px 20px;
+  background-color: #FFC90E;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
