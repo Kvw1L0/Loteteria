@@ -6,7 +6,7 @@ const cartonIdVisual = document.getElementById("carton-id");
 const ID = "ID-" + Math.random().toString(36).substring(2, 8).toUpperCase();
 cartonIdVisual.textContent = "ID del cartón: " + ID;
 
-let numeros = Array.from({ length: 40 }, (_, i) => i + 1);
+let numeros = Array.from({ length: 30 }, (_, i) => i + 1);
 numeros = numeros.sort(() => Math.random() - 0.5).slice(0, 9);
 
 numeros.forEach(num => {
